@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Ujian</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* CSS untuk layout flex-box */
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        header {
+            background-color: #b0dd33;
+            color: #fff;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 60;
+        }
+        nav {
+            width: 80%;
+            padding: 2rem 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+        }
+
+        li a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.6s;
+        }
+
+        li a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        article img {
+            width: 50%;
+            height: 300px;
+            object-fit: scale-down;          
+        }
+        
+        main {
+            flex-grow: 1;
+            padding: 1em;
+        }
+        
+        aside {
+            background-color: #f0f0f0;
+            padding: 1em;
+            width: 300px;
+            display: inline-block;
+        }
+
+        .aside1 {
+            flex-grow: 1;
+            padding: 1em;
+            display: inline-flexbox;
+        }
+        
+        footer {
+            background-color: #8d9b16;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        /* CSS untuk menampilkan gambar di aside */
+        aside img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h1>SELAMAT DATANG DI WEBSITE KAMI</h1>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Konten</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-container">
+            <main>
+                <article>
+                    <h2>Artikel Utama: Pengaruh Teknologi Terhadap Kehidupan Modern</h2>
+                    <p>Perkembangan teknologi saat ini telah membawa dampak besar dalam berbagai aspek kehidupan. Mulai dari kemudahan dalam berkomunikasi hingga transformasi di bidang pendidikan dan kesehatan.</p>
+                    <img src="asset/domba.jpg" alt="Gambar Teknologi">
+                    <p>Dalam artikel ini, kami akan membahas beberapa contoh nyata bagaimana teknologi telah mengubah cara kita bekerja, belajar, dan berinteraksi. Misalnya, platform digital memungkinkan kerja jarak jauh, serta pembelajaran daring yang semakin populer.</p>
+                </article>
+                <br>
+                <br>
+                <article>
+                    <h2>Artikel Kedua: Pengaruh Teknologi Terhadap Kehidupan Modern</h2>
+                    <p>Perkembangan teknologi saat ini telah membawa dampak besar dalam berbagai aspek kehidupan. Mulai dari kemudahan dalam berkomunikasi hingga transformasi di bidang pendidikan dan kesehatan.</p>
+                    <img src="asset/domba.jpg" alt="Gambar Teknologi">
+            </main>
+            <aside>
+                <img src="asset/kelinci.jpg" alt="Gambar Teknologi">
+                <h3>Kenapa Teknologi Penting?</h3>
+                <p>Teknologi telah menjadi bagian penting dalam kehidupan sehari-hari kita. Dalam artikel ini, kami akan membahas mengapa teknologi penting dan bagaimana teknologi dapat membantu kita dalam berbagai aspek kehidupan.</p>
+            </aside>
+            <aside class="aside1">
+                <img src="asset/kawai.jpg" alt="Gambar Teknologi">
+                <h3>Tentang Kami</h3>
+                <p>Website Teknologi adalah situs yang berfokus pada informasi terkini tentang teknologi. Kami menyediakan konten yang beragam, mulai dari berita terbaru hingga tutorial teknologi.</p>
+            </aside>
+            <aside>
+                <img src="asset/bear.jpg" alt="Gambar Berita Teknologi">
+                <h3>Berita Teknologi Terkini</h3>
+                <p>Ikuti perkembangan terbaru seputar teknologi dan inovasi dari berbagai penjuru dunia. Kami memberikan ulasan menarik dan informatif untuk membantu Anda tetap up-to-date dengan dunia digital.</p>
+            </aside>
+            
+        </div>
+        <footer>
+            <p>&copy; 2029 Website Teknologi.</p>
+        </footer>
+    </div>
+</body>
+</html>

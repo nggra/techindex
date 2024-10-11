@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+:root{
+    --text-color--:#DF9270;
+    --text-color-blend: #03055B;
+    --back-up-color: #E7FAF9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open-sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../dicoding1/asset/bear.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+}
